@@ -20,7 +20,7 @@ function App() {
           setCompleted(true);
         }
       }
-    }, 500); // 단어 생성 간격을 3초로 설정
+    }, 2000); // 단어 생성 간격을 2초로 설정
 
     return () => clearInterval(interval);
   }, [gameOver, completed]);
@@ -71,7 +71,7 @@ function App() {
       />
       {gameOver && (
         <div>
-          <p>게임 종료 - 단어가 너무 많이 쌓였거나 모든 단어가 나왔습니다!</p>
+          <p>모든 단어가 나왔습니다! - 게임 종료</p>
           <button onClick={handleRestart}>게임 재시작</button>
         </div>
       )}

@@ -1,0 +1,138 @@
+/* App.css */
+
+body {
+  background-color: #dbffc1;
+  margin: 80px;
+}
+
+
+.container {
+  max-width: 800px;
+  margin: 20px auto; /* 상단과 하단에 여백을 주고 가운데 정렬 */
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.category-filter {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.category-filter select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #ff99cc;
+  background-color: #ffccdd;
+  color: #fff;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input,
+form textarea,
+form select,
+form button {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #ff99cc;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #ff66a3;
+}
+
+.post-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4개의 열로 구성됨 */
+  gap: 20px; /* 각 카드 사이의 간격 */
+}
+
+.post-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s ease; /* 호버 효과를 위한 변형 트랜지션 */
+}
+
+.post-item:hover {
+  transform: translateY(-5px); /* 호버 시 약간 위로 띄움 */
+}
+
+.post-item h3 {
+  margin: 0 0 10px 0;
+}
+
+.post-item p {
+  margin: 0;
+}
+
+.post-item .post-category {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 12px;
+  background-color: #ffccdd;
+  color: #fff;
+  font-size: 12px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.post-item button {
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 1px solid #ff99cc;
+  background-color: #ffccdd;
+  color: #fff;
+  cursor: pointer;
+}
+
+.post-item button:hover {
+  background-color: #ff99cc;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.modal button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 1px solid #ff99cc;
+  background-color: #ffccdd;
+  color: #fff;
+  cursor: pointer;
+}
+
+.modal button:hover {
+  background-color: #ff99cc;
+}
